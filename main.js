@@ -18,7 +18,7 @@ function createNote() {
     form.innerHTML = `
       <input placeholder="Title" id="input" />
       <textarea placeholder="Add Note" id="text"></textarea>
-      <button id="add">Add</button>
+      <button type="submit" id="add">Add</button>
     `;
 
 
@@ -30,7 +30,7 @@ const input = document.getElementById('input');
 const text = document.getElementById('text');
 const addButton = document.getElementById('add');
 
-console.log(form);
+// console.log(form);
 
 
 form.addEventListener('submit', addNote);
@@ -43,6 +43,13 @@ function addNote(e) {
     note.classList.add('note-text');
 
     note.innerHTML = `
-        <
+        <h1>${input.value}</h3>
+        <p>${text.value}</p>
+        <div>
+           <button>Edit</button>
+           <button>Delete</button>
+        </div>
     `;
+
+    notesContent.appendChild(note);
 }

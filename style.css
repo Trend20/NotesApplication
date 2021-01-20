@@ -54,6 +54,9 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 20px;
+    background: red;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -89,7 +92,7 @@ header {
     overflow: hidden;
 }
 
-.form-elements button {
+#add {
     margin-top: 20px;
     width: 30%;
     padding: 10px;
