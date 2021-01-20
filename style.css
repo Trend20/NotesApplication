@@ -37,6 +37,10 @@ header {
     background: #49b363;
 }
 
+#create:hover {
+    background: #6ec283;
+}
+
 .notes-container {
     display: flex;
     justify-content: center;
