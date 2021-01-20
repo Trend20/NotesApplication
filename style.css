@@ -55,3 +55,47 @@ header {
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 20px;
 }
+
+
+/* form styles */
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(236, 231, 231);
+}
+
+#input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: .8rem;
+    outline: none;
+}
+
+.form-elements textarea {
+    padding: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-elements button {
+    margin-top: 20px;
+    width: 30%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #1d92d6;
+    cursor: pointer;
+}

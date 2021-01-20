@@ -2,6 +2,7 @@
 
 const createButton = document.getElementById('create');
 const notesContainer = document.querySelector('.notes-container');
+const notesContent = document.getElementById('notes-content');
 
 
 // add events
@@ -9,32 +10,39 @@ const notesContainer = document.querySelector('.notes-container');
 createButton.addEventListener('click', createNote);
 
 
-function createNote() {
+var form = document.createElement('form');
 
-    let form = document.createElement('form');
+function createNote() {
     form.classList.add('form-elements');
 
     form.innerHTML = `
-      <textarea></textarea>
-      <button type="submit>Add</button>
+      <input placeholder="Title" id="input" />
+      <textarea placeholder="Add Note" id="text"></textarea>
+      <button id="add">Add</button>
     `;
+
+
+    notesContainer.appendChild(form);
 }
 
+// form elements
+const input = document.getElementById('input');
+const text = document.getElementById('text');
+const addButton = document.getElementById('add');
 
-const formEement = document.querySelector('.form-elements');
+console.log(form);
 
-formEement.addEventListener('submit', addNote);
 
+form.addEventListener('submit', addNote);
 
 function addNote(e) {
 
-    // preventDefault form behaviour
-
     e.preventDefault();
 
-    let notes = document.createElement('div');
+    let note = document.createElement('div');
+    note.classList.add('note-text');
 
-    notes.innerHTML = `
-      
+    note.innerHTML = `
+        <
     `;
 }
